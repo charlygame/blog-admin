@@ -54,7 +54,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [ MiniCssExtractPlugin.loader, 'css-loader'],
-                include: [helpers.root('src')]
+                // include: [helpers.root('src')]
             },
             {
                 test: /\.jpg|jpeg|png|svg|woff|woff2|eot|ttf(\?.*$|$)/,
