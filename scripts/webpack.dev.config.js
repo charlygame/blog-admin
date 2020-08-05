@@ -22,7 +22,8 @@ module.exports = merge(sharedConfig, {
         contentBase: helpers.root('www'),
         hot: true,
         compress: true,
-        port: 9000
+        port: 9000,
+        historyApiFallback: true
     }
 
 });
