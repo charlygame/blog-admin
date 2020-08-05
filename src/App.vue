@@ -1,10 +1,11 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
+        <!-- <img alt="Vue logo" src="./assets/logo.png">
         <HelloWorld msg="Welcome to your Vue.js App" />
         <a-button>
             按钮
-        </a-button>
+        </a-button> -->
+        <router-view/>
     </div>
 </template>
 
