@@ -3,8 +3,8 @@
  */
 const Api = {
     // 登陆接口
-    LOGIN: '',
-    
+    LOGIN: '/api/login',
+
 }
 
 export default Api;

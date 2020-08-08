@@ -1,5 +1,6 @@
 
 const axios = require('axios').default;
+const qs = require('qs');
 
 export default class BaseRequest {
     
@@ -47,9 +48,9 @@ export default class BaseRequest {
     async get(options) {
 
         this._response = await this._http.get(
-            options.url || this.getUrl(),
+            options.url || (SERVER_URL + this.getUrl()),
             {
-                params: this._params
+                data: qs.stringify(this._params)
             }
         )
         this.parseData();
@@ -68,7 +69,7 @@ export default class BaseRequest {
      */
     async post(options) {
         this._response = await this._http.post(
-            options.url || this.getUrl(),
+            options.url || (SERVER_URL + this.getUrl()),
             {
                 params: this._params
             }

@@ -1,4 +1,5 @@
 import BaseRequest from '../BaseRequest' 
+import Api from '../Api'
 
 
 export default class RequestLogin extends BaseRequest {
@@ -10,7 +11,7 @@ export default class RequestLogin extends BaseRequest {
      * 准备登陆接口
      */
     getUrl() {
-        return ''
+        return Api.LOGIN;
     }
     /**
      * 解析响应数据

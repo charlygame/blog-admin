@@ -17,6 +17,8 @@ module.exports = {
         // 'styles': [
         //     './styles/**/*.less'
         // ],
+        // 'babel-polyfill', './app.js',
+        // 'babel-polyfill': '@babel/polyfill',
         'app' : './main.js'
     },
     output: {

@@ -59,8 +59,8 @@ module.exports = merge(sharedConfig, {
         new PluginMD5Hash(),                                   // 生成Hash 值
         new Webpack.optimize.UglifyJsPlugin(uglifyConfig),     // 丑化JS 代码
         new Webpack.DefinePlugin({                             // 定义常量
-            'app.mode': '\'production\'',
-            'app.git':  Git.long()
+
+            SERVER_URL: JSON.stringify('http://localhost:9000')  // 定义服务器地址
         }),
         new Visualizer({                                       // 可视化依赖库
             'filename': '../doc/stats.html'

@@ -10,12 +10,11 @@ module.exports = merge(sharedConfig, {
         sourceMapFilename: '[name].bundle.map',
         chunkFilename: '[id].chunk.js'
     },
-    devtool: 'cheap-module-eval-source-map',
+    // devtool: 'cheap-module-eval-source-map',
     mode: "development",
     plugins: [
         new Webpack.DefinePlugin({
-            // 'app.mode': '\'development\'',
-            // ''
+            'SERVER_URL': JSON.stringify('http://localhost:3000')
         })
     ],
     devServer: {

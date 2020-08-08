@@ -5,6 +5,7 @@
             "libraryName": "ant-design-vue",
             "libraryDirectory": "es",
             "style": "css"
-        }]
+        }],
+        ["@babel/transform-runtime"]
     ]
 }
